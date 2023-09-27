@@ -26,5 +26,5 @@ Two example .yaml files are provided, respectively corresponding to "contrastive
 ## How to do motif-based music visualization
 Enter model checkpoint path at the entry "active_checkpoint" in "your-config-file.yaml".
 ```
-python run_visualization.py --config "your-config-file.yaml --input_path "path to target .mid file"
+python run_visualization.py --config "your-config-file.yaml" --input_path "path to target .mid file"
 ```
