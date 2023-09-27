@@ -1,0 +1,43 @@
+data_dir: "../data/POP909_M_1bar"
+chunk_len: 1
+log_dir: "./logs"
+name: "excellent-trial"
+
+num_workers: 0 
+batch_size: 128
+epochs: 100
+save_frequency: 1
+val_check_interval: 10
+
+random_seed: 1234
+debug: False 
+
+method: "regularized"
+encoder: "bert"
+load_checkpoint:
+active_checkpoint:
+
+weight_var: 25.0
+weight_inv: 25.0
+weight_cov: 1.0
+
+optimizer:
+  optimizer: "adamw"
+  lr: 1.0e-4
+  beta1: 0.9
+  beta2: 0.999
+  eps: 1.0e-8
+  momentum: 0.9
+  weight_decay: 0.1
+  warmup: 2000
+
+bert_config:
+  pad_idx: 0
+  d_input: 84
+  d_model: 256
+  d_latent: 128
+  n_layers: 6
+  dropout_rate: 0.1
+  max_seq_len: 128
+
+  

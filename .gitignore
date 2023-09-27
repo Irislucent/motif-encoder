@@ -1,0 +1,12 @@
+/logs/
+/logs_2bar_dep/
+/__pycache__/
+*/__pycache__/
+*.swp
+*.swo
+/wandb/
+*.png
+*.pdf
+*.svg
+*.mid
+/.vscode/
